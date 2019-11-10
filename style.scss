@@ -1,9 +1,9 @@
-$accent: #DF212D;
-$bg-color: #FAFAFA;
-$active: #34ABE0;
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
+$accent: #df212d;
+$bg-color: #fafafa;
+$active: #34abe0;
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:500&display=swap");
 
 * {
   margin: 0;
@@ -16,8 +16,6 @@ body {
   background-color: $bg-color;
   min-width: 320px;
 }
-
-
 
 .main-grid {
   display: grid;
@@ -39,7 +37,6 @@ body {
   @media (max-width: 992px) {
     grid-template-columns: 100px 1fr;
     grid-template-rows: 180px 1fr;
-
   }
 
   @media (max-width: 576px) {
@@ -49,14 +46,13 @@ body {
 }
 
 .main-header {
-  background: #FFFFFF;
-  border-bottom: 1px solid #E5E5E5;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
   position: absolute;
   padding: 40px 60px;
   width: 100%;
   grid-area: header;
   height: 100%;
-
 
   @media (max-width: 992px) {
     &.scroll {
@@ -103,7 +99,7 @@ body {
     line-height: 38px;
     color: #000000;
     opacity: 1;
-    transition: opacity .5s;
+    transition: opacity 0.5s;
 
     @media (max-width: 992px) {
       text-align: right;
@@ -115,7 +111,7 @@ body {
     position: relative;
 
     &::before {
-      content: '';
+      content: "";
       background-image: url(../img/search.svg);
       display: block;
       position: absolute;
@@ -157,21 +153,18 @@ body {
       font-style: normal;
       font-weight: normal;
       font-size: 18px;
-      line-height: 28px;
       color: rgba(0, 0, 0, 0.45);
 
       @media (max-width: 576px) {
         font-size: 14px;
-        line-height: 28px;
       }
     }
   }
-
 }
 
 .sidebar {
   grid-area: side;
-  transition: width .5s;
+  transition: width 0.5s;
   height: 100%;
   position: relative;
   z-index: 3;
@@ -276,17 +269,17 @@ body {
       width: 26px;
       background: #262626;
       border-radius: 50px;
-      transition: .5s;
+      transition: 0.5s;
 
       &::before,
       &::after {
-        content: '';
+        content: "";
         position: absolute;
         height: 2px;
         width: 26px;
         background: #262626;
         border-radius: 50px;
-        transition: .5s;
+        transition: 0.5s;
       }
 
       &::before {
@@ -304,7 +297,7 @@ body {
     align-items: center;
     margin-top: 40px;
     margin-left: 40px;
-    transition: .5s;
+    transition: 0.5s;
     opacity: 1;
 
     @media (max-width: 992px) {
@@ -323,7 +316,6 @@ body {
       margin-left: auto;
       margin-right: auto;
     }
-
   }
 
   &__brand-name {
@@ -335,7 +327,7 @@ body {
     line-height: 24px;
     color: #333333;
     opacity: 1;
-    transition: .5s;
+    transition: 0.5s;
 
     @media (max-width: 992px) {
       display: none;
@@ -351,7 +343,7 @@ body {
     list-style: none;
     margin-top: 40px;
     opacity: 1;
-    transition: .5s;
+    transition: 0.5s;
 
     @media (max-width: 576px) {
       opacity: 0;
@@ -367,7 +359,7 @@ body {
       padding-left: 40px;
       padding-top: 18px;
       padding-bottom: 18px;
-      transition: border .5s, color .5s;
+      transition: border 0.5s, color 0.5s;
 
       @media (max-width: 992px) {
         padding-left: 0;
@@ -401,7 +393,7 @@ body {
       display: flex;
       stroke: #333333;
       opacity: 1;
-      transition: .5s;
+      transition: 0.5s;
       margin-right: 12px;
 
       @media (max-width: 992px) {
@@ -409,16 +401,13 @@ body {
         margin-right: auto;
       }
     }
-
-
   }
 
-  background: #F3F4F9;
+  background: #f3f4f9;
 }
 
 ::-webkit-scrollbar {
   width: 3px;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -434,8 +423,6 @@ body {
   grid-auto-rows: minmax(160px, 1fr);
   overflow: auto;
 
-
-
   @media (max-width: 1200px) {
     grid-template-columns: repeat(2, minmax(300px, 1fr));
   }
@@ -448,7 +435,7 @@ body {
   @media (max-width: 767px) {
     grid-template-columns: repeat(1, minmax(250px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(130px, 1fr));
-
+    grid-auto-rows: minmax(130px, 1fr);
   }
 
   gap: 20px;
@@ -457,7 +444,7 @@ body {
     cursor: pointer;
     position: relative;
     border: 1px solid rgba(0, 0, 0, 0);
-    transition: border .5s;
+    transition: border 0.5s;
     padding: 16px 40px 16px 20px;
     background-size: cover;
 
@@ -467,7 +454,6 @@ body {
     box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
 
     .card-inner {
-
       &__header {
         display: block;
         font-style: normal;
@@ -502,11 +488,13 @@ body {
         @media (max-width: 992px) {
           font-size: 14px;
           line-height: 16px;
+          margin-top: 4px;
         }
 
         @media (max-width: 576px) {
           font-size: 12px;
           line-height: 16px;
+          margin-top: 0;
         }
       }
 
@@ -548,7 +536,7 @@ body {
     }
 
     &__left-cut {
-      box-shadow: inset 0px 2px 6px rgba(0, 0, 0, 0.15);
+      box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.15);
       border: 1px solid transparent;
       border-radius: 2px;
       position: absolute;
@@ -560,15 +548,15 @@ body {
       margin-left: -7px;
       background-color: $bg-color;
       transform: rotate(45deg);
-      transition: border .5s;
+      transition: border 0.5s;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
-        width: 13px;
-        height: 13px;
-        margin-left: -4px;
-        margin-top: -4px;
+        display: block;
+        width: 12px;
+        height: 12px;
+        transform: translate(-4px, -4px);
         left: 0;
         top: 50%;
         background-color: $bg-color;
@@ -588,11 +576,10 @@ body {
       top: 50%;
       background-color: $bg-color;
       transform: rotate(-45deg);
-      transition: border .5s;
-
+      transition: border 0.5s;
 
       &::before {
-        content: '';
+        content: "";
         position: absolute;
         width: 13px;
         height: 13px;
